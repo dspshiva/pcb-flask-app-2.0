@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> PCB Detection App </title>
+</head>
+<body>
+    <h1> &#128527; Upload PCB Image</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Detect</button>
+    </form>
+
+    {% if result_img %}
+    <h2>Chusuko ra Result: &#128526;</h2>
+    <img src="{{ url_for('static', filename=result_img) }}" width="600">
+    {% endif %}
+
+
+</body>
+</html>
