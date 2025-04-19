@@ -1,14 +1,9 @@
 from ultralytics import YOLO
 import cv2
 
-# Load the YOLO model (replace with your .pt path)
-model = YOLO("best.pt")  # put correct name of your .pt file
+model = YOLO("best.pt")  # Ensure 'best.pt' is in your project folder
 
 def detect_image(image_path):
-    # Run inference
     results = model(image_path)[0]
-
-    # Plot results on the image
-    annotated_frame = results.plot()
-
+    annotated_frame = results.plot()  # Returns a NumPy image
     return annotated_frame
