@@ -44,6 +44,10 @@ The model achieves high precision and recall in identifying these defects and ca
 3. The detected defects will be displayed on the image, and defect details will be stored in the MySQL database.
 4. Users can sign in via the authentication system to track previous defect analysis results.
 
+## Live Demo
+
+You can **test the live demo** of the PCB defect detection system hosted on [AWS EC2](http://13.51.165.79:5000/) by uploading PCB images for real-time defect detection.
+
 ## Images
 
 ### 1. **Demo Screenshot**  
